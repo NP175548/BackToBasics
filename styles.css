@@ -9,6 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif; /* Default font for body */
     color: white;
+    background-color: #121212; /* Dark grey background for body */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,7 +17,6 @@ body {
     text-align: center;
     min-height: 100vh;
     line-height: 1.6;
-    background-color: #1a1a1a; /* Dark background for better text contrast */
 }
 
 /* Header */
@@ -29,7 +29,7 @@ header {
 h1 {
     font-family: 'Bebas Neue', sans-serif; /* Bold font for the title */
     font-size: 3.5rem;
-    color: #ffcc00; /* Gold color */
+    color: #ffffff; /* White for the title */
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
@@ -38,7 +38,7 @@ h1 {
 h2 {
     font-family: 'Lora', serif; /* Elegant serif font */
     font-size: 1.5rem;
-    color: #fff;
+    color: #ddd; /* Light grey for subheadings */
     margin-top: 10px;
     font-weight: 400;
 }
@@ -70,7 +70,7 @@ p {
     margin: 20px auto;
     font-size: 1.2rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9); /* Light text with some transparency */
     font-family: 'Lora', serif; /* Elegant font for paragraphs */
 }
 
@@ -97,7 +97,7 @@ iframe {
 .player-name {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #ffcc00; /* Gold color for player names */
+    color: #4CAF50; /* Green color for player names */
     margin-top: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -106,7 +106,7 @@ iframe {
 /* Hover effects for player names */
 .player-name:hover {
     text-decoration: underline;
-    color: #ff4500; /* Red color when hovered */
+    color: #f44336; /* Red color on hover */
 }
 
 /* Dropdown Menu Styling */
@@ -117,7 +117,7 @@ iframe {
 }
 
 .dropbtn {
-    background-color: #0073e6;
+    background-color: #333333; /* Dark grey background for dropdown */
     color: white;
     padding: 12px 16px;
     font-size: 1.2rem;
@@ -129,7 +129,7 @@ iframe {
 }
 
 .dropbtn:hover {
-    background-color: #005bb5;
+    background-color: #555; /* Slightly lighter grey on hover */
 }
 
 .dropdown-content {
@@ -154,7 +154,7 @@ iframe {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; /* Light grey background on hover */
 }
 
 .dropdown:hover .dropdown-content {
@@ -163,7 +163,7 @@ iframe {
 
 /* Footer Styling */
 footer {
-    background-color: #333;
+    background-color: #222222; /* Dark grey footer */
     color: white;
     padding: 20px;
     margin-top: 40px;
@@ -180,13 +180,14 @@ section {
     margin-left: auto;
     margin-right: auto;
     max-width: 900px;
+    border-left: 5px solid #4CAF50; /* Green border to accentuate the section */
 }
 
 section h2 {
     font-family: 'Bebas Neue', sans-serif; /* Bold title font for sections */
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ff4500; /* Red color for section headers */
+    color: #f44336; /* Red color for section headers */
 }
 
 /* Responsive Styling */
