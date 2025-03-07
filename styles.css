@@ -5,8 +5,9 @@
     box-sizing: border-box;
 }
 
+/* Body styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Default font for body */
     color: white;
     background-size: cover;
     background-position: center;
@@ -15,29 +16,31 @@ body {
     text-align: center;
     min-height: 100vh;
     line-height: 1.6;
+    background-color: #1a1a1a; /* Dark background for better text contrast */
 }
 
-h1, h2 {
-    font-family: 'Arial', sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
+/* Header */
 header {
     padding: 20px 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6); /* Dark background with some opacity */
     margin-bottom: 40px;
 }
 
 h1 {
-    font-size: 3rem;
-    color: #ffffff;
+    font-family: 'Bebas Neue', sans-serif; /* Bold font for the title */
+    font-size: 3.5rem;
+    color: #ffcc00; /* Gold color */
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 
 h2 {
+    font-family: 'Lora', serif; /* Elegant serif font */
     font-size: 1.5rem;
+    color: #fff;
     margin-top: 10px;
+    font-weight: 400;
 }
 
 /* Background Image Styling for Each Page */
@@ -57,7 +60,7 @@ h2 {
     background-image: url('images/background-duncan.jpg');
 }
 
-/* Making sure content is readable on different background images */
+/* Main content */
 main {
     padding: 40px 20px;
 }
@@ -68,6 +71,7 @@ p {
     font-size: 1.2rem;
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.9);
+    font-family: 'Lora', serif; /* Elegant font for paragraphs */
 }
 
 /* Image and Content Styling */
@@ -93,15 +97,16 @@ iframe {
 .player-name {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #ffcc00; /* Gold color for player names */
     margin-top: 10px;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* Hover effects for player names */
 .player-name:hover {
     text-decoration: underline;
-    color: #ffcc00;
+    color: #ff4500; /* Red color when hovered */
 }
 
 /* Dropdown Menu Styling */
@@ -158,28 +163,33 @@ iframe {
 
 /* Footer Styling */
 footer {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #333;
     color: white;
     padding: 20px;
     margin-top: 40px;
-}
-
-footer p {
-    font-size: 1rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Section Styling */
 section {
     margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for sections */
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
 }
 
 section h2 {
+    font-family: 'Bebas Neue', sans-serif; /* Bold title font for sections */
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #ffcc00;
+    color: #ff4500; /* Red color for section headers */
 }
 
-/* Make sure sections look good on mobile */
+/* Responsive Styling */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
@@ -198,6 +208,10 @@ section h2 {
     }
 
     .player-name {
+        font-size: 1rem;
+    }
+
+    footer p {
         font-size: 1rem;
     }
 }
